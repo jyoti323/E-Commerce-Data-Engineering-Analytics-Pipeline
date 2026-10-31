@@ -24,3 +24,7 @@ This is called an ETL/ELT pipeline.
 - ETL: Extract, Transform, Load.
 - ELT: Extract, Load, Transform.
 In your project, you can use an ELT approach: load raw data first and then transform it using dbt and SQL.
+
+# Running the loader
+
+Set the `DATABASE_URL` environment variable to a SQLAlchemy-compatible database URL before running `src/load.py`. Keep credentials in your environment or a local, ignored `.env` file; do not commit them.
