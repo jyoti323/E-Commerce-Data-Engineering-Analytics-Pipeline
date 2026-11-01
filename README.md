@@ -28,3 +28,19 @@ In your project, you can use an ELT approach: load raw data first and then trans
 # Running the loader
 
 Set the `DATABASE_URL` environment variable to a SQLAlchemy-compatible database URL before running `src/load.py`. Keep credentials in your environment or a local, ignored `.env` file; do not commit them.
+
+#Phase 2 – Build the Python ETL pipeline
+
+We will build:
+1. extract.py – Extract data from all nine CSV files.
+2. validate.py – Check data quality.
+3. transform.py – Clean and transform data.
+4. load.py – Load data into PostgreSQL.
+5. main.py – Execute the complete pipeline.
+
+We will also learn:
+- ETL vs ELT.
+- Data types and missing values.
+- Duplicate detection.
+- Primary and foreign keys.
+- Error handling and logging
