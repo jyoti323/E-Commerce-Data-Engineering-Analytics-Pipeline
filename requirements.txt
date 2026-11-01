@@ -1,0 +1,6 @@
+Pandas
+numpy
+sqlalchemy
+psycopg2-library
+python-dotenv
+jupyter
