@@ -70,7 +70,7 @@ def validate_data(data):
 
         print(f"\nChecking dataset: {name}")
         missing_columns = [
-            col for col in REQUIRED_COLUMNS[name]
+            col for col in REQUIRED_COLUMNS.get(name.lower(),[])
             if col not in df.columns
         ]
 
